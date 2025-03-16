@@ -18,11 +18,11 @@
       "head_shot_multiplier": 1.35,
       "damage_adjust": [
         {"distance": 35, "damage": 8},
-        {"distance": 70, "damage": 6.5},
+        {"distance": 70, "damage": 7},
         {"distance": "infinite", "damage": 6}
       ]
     },
-    "speed": 305,
+    "speed": 320,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.015,
