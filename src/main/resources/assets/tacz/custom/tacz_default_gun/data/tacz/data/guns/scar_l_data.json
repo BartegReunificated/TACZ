@@ -11,15 +11,15 @@
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 8,
+    "damage": 9,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
-        {"distance": 40, "damage": 8},
-        {"distance": 80, "damage": 7},
-        {"distance": "infinite", "damage": 6}
+        {"distance": 40, "damage": 9},
+        {"distance": 80, "damage": 8},
+        {"distance": "infinite", "damage": 7}
       ]
     },
     "speed": 300,
@@ -81,7 +81,7 @@
     "move": 5.5,
     "sneak": 4.75,
     "lie": 4,
-    "aim": 0.125
+    "aim": 0.1
   },
   // 近战相关
   "melee": {
