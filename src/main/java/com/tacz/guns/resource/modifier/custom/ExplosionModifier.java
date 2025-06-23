@@ -2,10 +2,11 @@ package com.tacz.guns.resource.modifier.custom;
 
 import com.google.common.collect.Lists;
 import com.google.gson.annotations.SerializedName;
+import com.tacz.guns.api.GunProperties;
 import com.tacz.guns.api.modifier.CacheValue;
 import com.tacz.guns.api.modifier.IAttachmentModifier;
 import com.tacz.guns.api.modifier.JsonProperty;
-import com.tacz.guns.resource_legacy.CommonGunPackLoader;
+import com.tacz.guns.resource.CommonAssetsManager;
 import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.ExplosionData;
@@ -18,7 +19,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class ExplosionModifier implements IAttachmentModifier<ExplosionModifier.ExplosionModifierValue, ExplosionData> {
-    public static final String ID = "explosion";
+    public static final String ID = GunProperties.EXPLOSION.name();
 
     @Override
     public String getId() {
@@ -27,7 +28,7 @@ public class ExplosionModifier implements IAttachmentModifier<ExplosionModifier.
 
     @Override
     public JsonProperty<ExplosionModifierValue> readJson(String json) {
-        ExplosionModifier.Data data = CommonGunPackLoader.GSON.fromJson(json, ExplosionModifier.Data.class);
+        ExplosionModifier.Data data = CommonAssetsManager.GSON.fromJson(json, ExplosionModifier.Data.class);
         return new ExplosionModifier.ExplosionJsonProperty(data.getExplosion());
     }
 
@@ -72,7 +73,7 @@ public class ExplosionModifier implements IAttachmentModifier<ExplosionModifier.
         float damage = (float) AttachmentPropertyManager.eval(damageValues, cacheValue.getDamage());
         boolean knockback = AttachmentPropertyManager.eval(knockbackValues, false);
         boolean destroyBlock = AttachmentPropertyManager.eval(destroyBlockValues, false);
-        int delay = (int) AttachmentPropertyManager.eval(delayValues, cacheValue.getDelay());
+        float delay = (float) AttachmentPropertyManager.eval(delayValues, cacheValue.getDelay());
         ExplosionData explosionData = new ExplosionData(true, radius, damage, knockback, delay, destroyBlock);
         cache.setValue(explosionData);
     }

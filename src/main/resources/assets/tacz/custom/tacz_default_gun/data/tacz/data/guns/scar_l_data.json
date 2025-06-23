@@ -8,21 +8,40 @@
   ],
   "bolt": "closed_bolt",
   "rpm": 650,
+  "script": "tacz:xmag_reload_logic",
+  "script_param": {
+    "reload_feed": 1.13,
+    "reload_cooldown": 1.9,
+    "empty_feed": 1.83,
+    "empty_cooldown": 2.3,
+    "reload_xmag_1_feed": 1.33,
+    "reload_xmag_1_cooldown": 2.17,
+    "empty_xmag_1_feed": 2.07,
+    "empty_xmag_1_cooldown": 2.63,
+    "reload_xmag_2_feed": 1.63,
+    "reload_xmag_2_cooldown": 2.47,
+    "empty_xmag_2_feed": 2.43,
+    "empty_xmag_2_cooldown": 2.97,
+    "reload_xmag_3_feed": 2.17,
+    "reload_xmag_3_cooldown": 2.83,
+    "empty_xmag_3_feed": 2.87,
+    "empty_xmag_3_cooldown": 3.47
+  },
   "bullet": {
     "life": 0.8,
     "bullet_amount": 1,
-    "damage": 9,
+    "damage": 7.5,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.25,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
-        {"distance": 40, "damage": 9},
-        {"distance": 80, "damage": 8},
-        {"distance": "infinite", "damage": 7}
+        {"distance": 30, "damage": 7.5},
+        {"distance": 70, "damage": 6},
+        {"distance": "infinite", "damage": 5}
       ]
     },
-    "speed": 300,
+    "speed": 290,
     "gravity": 0.15,
     "knockback": 0,
     "friction": 0.015,
@@ -79,9 +98,9 @@
   "inaccuracy": {
     "stand": 5,
     "move": 5.5,
-    "sneak": 4.75,
-    "lie": 4,
-    "aim": 0.1
+    "sneak": 2.5,
+    "lie": 1.5,
+    "aim": 0.125
   },
   // 近战相关
   "melee": {
@@ -111,7 +130,8 @@
     "stock",
     "grip",
     "muzzle",
-    "extended_mag"
+    "extended_mag",
+    "laser"
   ],
   "exclusive_attachments": {
   }
