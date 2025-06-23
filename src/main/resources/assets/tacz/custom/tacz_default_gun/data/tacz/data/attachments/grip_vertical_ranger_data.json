@@ -5,16 +5,16 @@
     "multiplier": 1.05
   },
   "inaccuracy": {
-    "multiplier": 1.0,
-    "percent": -0.4
+    "percent": -0.4,
+    "multiplier": 1.0
   },
   "aim_inaccuracy": {
-    "multiplier": 1.0,
-    "percent": -0.5
+    "percent": -0.5,
+    "multiplier": 1.0
   },
   "sneak_inaccuracy": {
-    "multiplier": 1.0,
-    "percent": -0.4
+    "percent": -0.4,
+    "multiplier": 1.0
   },
   "recoil": {
     "pitch": {

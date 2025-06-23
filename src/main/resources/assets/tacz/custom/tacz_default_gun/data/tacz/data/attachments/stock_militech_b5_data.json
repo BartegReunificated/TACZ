@@ -3,9 +3,12 @@
   "ads": {
     "multiplier": 1.1
   },
+  "inaccuracy": {
+    "multiplier": 1.0
+  },
   "aim_inaccuracy": {
-    "multiplier": 1.0,
-    "percent": -0.6
+    "percent": -0.6,
+    "multiplier": 1.0
   },
   "recoil": {
     "pitch": {
