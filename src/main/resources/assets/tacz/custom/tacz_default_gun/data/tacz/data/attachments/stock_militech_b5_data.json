@@ -4,11 +4,12 @@
     "multiplier": 1.1
   },
   "aim_inaccuracy": {
-    "multiplier": 0.87
+    "multiplier": 1.0,
+    "percent": -0.6
   },
   "recoil": {
     "pitch": {
-      "multiplier": 0.68
+      "multiplier": 0.6
     },
     "yaw": {
       "multiplier": 0.6
