@@ -11,6 +11,9 @@
     "percent": -0.3,
     "multiplier": 1.0
   },
+  "sneak_inaccuracy": {
+    "multiplier": 1.0
+  },
   "recoil": {
     "pitch": {
       "multiplier": 0.8
